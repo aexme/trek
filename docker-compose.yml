@@ -37,5 +37,4 @@ services:
       retries: 3
       start_period: 15s
     labels:
-        - traefik.http.middlewares.authentik-auth@file
-        - "coolify.traefik.middleware=authentik-auth@file,trek-security-headers@file"
+        - "coolify.traefik.middlewares=authentik-auth,trek-security-headers"
