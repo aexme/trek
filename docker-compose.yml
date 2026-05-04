@@ -38,7 +38,7 @@ services:
       start_period: 15s
     labels:
       - coolify.managed=true
-      - coolify.traefik.middlewares=authentik-auth@file,trek-security-headers@file
+      - coolify.traefik.middlewares=authentik-auth@file,trek-security-headers@file,websocket-headers@file
       - traefik.enable=true
       - traefik.http.routers.https-0-ry6tx698p8c7bdjnj3cihhhs-app.rule=Host(`trek.aex.ovh`)
       - traefik.http.routers.https-0-ry6tx698p8c7bdjnj3cihhhs-app.entryPoints=https
