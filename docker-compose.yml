@@ -1,5 +1,6 @@
 services:
   app:
+    exclude_from_hc: true
     image: 'mauriceboe/trek:latest'
     container_name: trek
     read_only: true
