@@ -39,5 +39,5 @@ services:
       start_period: 15s
     labels:
       - coolify.managed=true
-      - coolify.traefik.middlewares=authentik-auth@file,trek-security-headers@file,websocket-headers@file
+      - coolify.traefik.middlewares=authentik-auth@file
       - traefik.enable=true
